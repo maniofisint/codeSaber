@@ -15,9 +15,10 @@ class shelf :
         
         self.books = []
         keys = books_info.keys()
+        l = ()
+        l = books_info.values()
         for key in keys:
             for n in range(books_each_sh) :
-                self.books.append(book(shelf, key, books_info[key]))
             
 
 class book :
