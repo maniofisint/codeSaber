@@ -13,7 +13,6 @@ class library :
 class shelf :
     def __init__(self, shelf, books_each_sh = 1, books_info = {}):
         self.books = []
-        keys = books_info.keys()
         for n in range(books_each_sh) :
             self.books.append(book(shelf, books_info.popitem()))
 
