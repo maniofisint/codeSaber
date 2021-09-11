@@ -14,9 +14,11 @@ class shelves :
     def __init__(self,shelf,books_each_sh = 1,**books_info):
         self.books = []
         keys = books_info.keys()
+        l = ()
+        l = books_info.values()
         for key in keys:
             for n in range(books_each_sh) :
-                self.books.append(books(shelf,key,books_info[key]))
+                self.books.append(books(shelf,key,l.pop()))
             
 
 class books :
