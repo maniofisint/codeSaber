@@ -130,8 +130,9 @@ class DoublyLinkedList{
     public static void print(Node head) {
         Node node = head;
         while (node.getNext()!=null) {
-            System.out.print(node.getElement()+" ");
             node = node.getNext();
+            System.out.print(node.getElement()+" ");
+            
         }
     }
 }
